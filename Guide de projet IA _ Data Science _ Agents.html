@@ -1,0 +1,199 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}</style><style>:root{color-scheme:light dark;--md-bg:#fff;--md-text:rgba(0,0,0,.8);--md-muted:rgba(0,0,0,.6);--md-fill:rgba(0,0,0,.04);--md-fill-strong:rgba(0,0,0,.06);--md-rule:rgba(0,0,0,.1);--md-rule-strong:rgba(0,0,0,.16);--md-link:hsl(210 100% 45%)}@media (prefers-color-scheme:dark){:root:where(:not([data-theme="light"])){--md-bg:#0d0d0d;--md-text:rgba(255,255,255,.85);--md-muted:rgba(255,255,255,.6);--md-fill:rgba(255,255,255,.06);--md-fill-strong:rgba(255,255,255,.09);--md-rule:rgba(255,255,255,.14);--md-rule-strong:rgba(255,255,255,.22);--md-link:hsl(210 100% 72%)}}:root[data-theme="dark"]{color-scheme:dark;--md-bg:#0d0d0d;--md-text:rgba(255,255,255,.85);--md-muted:rgba(255,255,255,.6);--md-fill:rgba(255,255,255,.06);--md-fill-strong:rgba(255,255,255,.09);--md-rule:rgba(255,255,255,.14);--md-rule-strong:rgba(255,255,255,.22);--md-link:hsl(210 100% 72%)}:root[data-theme="light"]{color-scheme:light}@media print{:root,:root[data-theme="dark"]{color-scheme:light;--md-bg:#fff;--md-text:rgba(0,0,0,.8);--md-muted:rgba(0,0,0,.6);--md-fill:rgba(0,0,0,.04);--md-fill-strong:rgba(0,0,0,.06);--md-rule:rgba(0,0,0,.1);--md-rule-strong:rgba(0,0,0,.16);--md-link:hsl(210 100% 45%)}}body{background:var(--md-bg);color:var(--md-text);max-width:720px;margin:0 auto;padding:32px;display:flex;flex-direction:column;gap:10px;font:14px/1.55 -apple-system,BlinkMacSystemFont,'SF Pro','Segoe UI',sans-serif;overflow-wrap:break-word}body>:first-child{margin-top:0}h1,h2,h3,h4,h5,h6{margin:6px 0 0;line-height:1.25;font-weight:600;text-wrap:balance}h1{font-size:1.35em}h2{font-size:1.15em;color:var(--md-muted)}h3,h4,h5,h6{font-size:1em}p,ul,ol,blockquote,table,pre,hr{margin:0}strong{font-weight:600}a{color:var(--md-link);text-decoration:none}a:hover{text-decoration:underline}ul,ol{display:flex;flex-direction:column;gap:6px;padding-left:22px}ul{list-style:disc}ol{list-style:decimal}:is(li,td,th)>*+:is(p,ul,ol,blockquote){margin-top:6px}blockquote{display:flex;flex-direction:column;gap:10px;border-left:2px solid var(--md-rule);padding-left:10px;color:var(--md-muted)}:not(pre)>code{background:var(--md-fill);padding:1px 3px;border-radius:4px;font:.92em 'SF Mono',ui-monospace,Menlo,Consolas,monospace}a>code{background:none;color:inherit}pre{background:var(--md-fill);padding:10px 12px;border-radius:6px;overflow-x:auto;font:12px/1.5 'SF Mono',ui-monospace,Menlo,Consolas,monospace;margin-block:4px}pre code{background:none;padding:0;font:inherit}table{width:100%;border-collapse:separate;border-spacing:2px;font:inherit}th,td{padding:6px 8px;border-radius:3px;text-align:left;vertical-align:top}th{background:var(--md-fill-strong);font-weight:600}td{background:var(--md-fill)}:is(th,td) :not(pre)>code{background:transparent}hr{border:0;border-top:1px solid var(--md-rule-strong);margin-block:10px}img{max-width:100%;height:auto;border-radius:4px}</style>
+</head><body>
+<h1>Guide de projet : plateforme de données, ML, RAG et agents IA</h1>
+<p>Un guide pas à pas pour réaliser un projet de portfolio complet, destiné aux candidatures d'ingénieur(e) IA et data scientist.</p>
+<hr>
+<h2>1. Présentation du sujet</h2>
+<p>Vous construisez une <strong>plateforme intelligente pour un e-commerce</strong>, de la donnée brute jusqu'à un copilote d'agents IA déployé en ligne.</p>
+<p>Elle comporte cinq couches :</p>
+<ol>
+<li><strong>Données</strong> : pipeline d'ingestion, nettoyage et stockage.</li>
+<li><strong>Machine learning</strong> : prédiction de l'insatisfaction client, segmentation, recommandation.</li>
+<li><strong>NLP / RAG</strong> : assistant qui répond aux questions à partir des avis clients et de la documentation.</li>
+<li><strong>Agents IA</strong> : un orchestrateur et des agents spécialisés qui utilisent des outils (SQL, modèles ML, RAG) pour accomplir des tâches.</li>
+<li><strong>Production</strong> : API, Docker, CI/CD, suivi des expériences, monitoring.</li>
+</ol>
+<h2>2. Objectifs</h2>
+<p><strong>Objectif métier :</strong> aider une équipe e-commerce à repérer les clients à risque, comprendre leurs motifs d'insatisfaction et agir (recommandation, message, rapport).</p>
+<p><strong>Objectifs de carrière :</strong> démontrer sur un seul projet les compétences suivantes :</p>
+<ul>
+<li>Python, SQL, statistiques, visualisation</li>
+<li>ML supervisé et non supervisé, évaluation rigoureuse</li>
+<li>Embeddings, systèmes de recommandation</li>
+<li>LLM, RAG, agents, MCP</li>
+<li>MLOps : MLflow, DVC, Docker, CI/CD, monitoring</li>
+</ul>
+<p><strong>Résultat attendu :</strong> un dépôt GitHub propre, une démo en ligne et un README avec des résultats chiffrés.</p>
+<h2>3. Datasets</h2>
+<p><strong>Dataset principal (recommandé) : Olist Brazilian E-Commerce</strong></p>
+<ul>
+<li><a href="https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce">https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce</a></li>
+<li>Environ 100 000 commandes, plusieurs tables (commandes, clients, produits, vendeurs, paiements, livraisons, avis). C'est idéal pour le SQL et les jointures.</li>
+<li>Attention : très peu de clients rachètent, donc la cible « churn » n'est pas adaptée. Utilisez plutôt <strong>l'insatisfaction</strong> (note d'avis ≤ 2) ou le <strong>retard de livraison</strong>.</li>
+</ul>
+<p><strong>Alternatives et compléments</strong></p>
+<table>
+<thead>
+<tr>
+<th>Besoin</th>
+<th>Dataset</th>
+<th>Lien</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Churn / valeur client / RFM</td>
+<td>Online Retail II (UCI)</td>
+<td><a href="https://archive.ics.uci.edu/dataset/502/online+retail+ii">https://archive.ics.uci.edu/dataset/502/online+retail+ii</a></td>
+</tr>
+<tr>
+<td>Churn (tabulaire simple)</td>
+<td>Telco Customer Churn</td>
+<td><a href="https://www.kaggle.com/datasets/blastchar/telco-customer-churn">https://www.kaggle.com/datasets/blastchar/telco-customer-churn</a></td>
+</tr>
+<tr>
+<td>Recommandation (panier)</td>
+<td>Instacart Market Basket</td>
+<td><a href="https://www.kaggle.com/c/instacart-market-basket-analysis">https://www.kaggle.com/c/instacart-market-basket-analysis</a></td>
+</tr>
+<tr>
+<td>Recommandation (mode)</td>
+<td>H&amp;M Personalized Fashion</td>
+<td><a href="https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations">https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations</a></td>
+</tr>
+<tr>
+<td>Recommandation (classique)</td>
+<td>MovieLens</td>
+<td><a href="https://grouplens.org/datasets/movielens/">https://grouplens.org/datasets/movielens/</a></td>
+</tr>
+<tr>
+<td>NLP (avis)</td>
+<td>Amazon Reviews 2023</td>
+<td><a href="https://amazon-reviews-2023.github.io/">https://amazon-reviews-2023.github.io/</a></td>
+</tr>
+</tbody>
+</table>
+<p>Les liens peuvent changer : vérifiez-les et lisez la licence de chaque jeu de données. Un compte Kaggle gratuit est nécessaire.</p>
+<h2>4. Outils à installer</h2>
+<p>Python 3.11+, Git/GitHub, VS Code, Docker, PostgreSQL, Jupyter. Bibliothèques : pandas, scikit-learn, XGBoost/LightGBM, Optuna, SHAP, MLflow, DVC, FastAPI, Pydantic, LangGraph (ou autre framework d'agents), une base vectorielle (Chroma, FAISS ou pgvector), Streamlit, Evidently, Langfuse.</p>
+<hr>
+<h2>5. Étapes à suivre</h2>
+<h3>Phase 0 : Préparation (2 jours)</h3>
+<ul>
+<li>Créez le dépôt GitHub avec cette structure : <code>data/</code>, <code>notebooks/</code>, <code>src/</code>, <code>api/</code>, <code>agents/</code>, <code>tests/</code>, <code>docs/</code>.</li>
+<li>Créez un environnement virtuel et un fichier <code>requirements.txt</code>.</li>
+<li>Rédigez dès maintenant un README provisoire : problème, objectif, plan.</li>
+<li><strong>Livrable :</strong> dépôt initialisé.</li>
+</ul>
+<h3>Phase 1 : Ingestion et pipeline de données (semaine 1)</h3>
+<ol>
+<li>Téléchargez Olist et versionnez les données brutes avec DVC (sans les pousser sur Git).</li>
+<li>Chargez les tables dans PostgreSQL et définissez les clés.</li>
+<li>Écrivez des scripts de nettoyage : valeurs manquantes, doublons, types, dates.</li>
+<li>Ajoutez des contrôles de qualité (Great Expectations ou tests Pandera).</li>
+<li>Orchestrez le tout avec Airflow ou Prefect.</li>
+</ol>
+<ul>
+<li><strong>Livrable :</strong> pipeline reproductible en une commande.</li>
+</ul>
+<h3>Phase 2 : Analyse exploratoire (semaine 2)</h3>
+<ol>
+<li>Posez 5 à 10 questions métier (délais de livraison, catégories, satisfaction par région).</li>
+<li>Réalisez des visualisations claires (Matplotlib, Plotly).</li>
+<li>Construisez la segmentation RFM et un clustering K-Means ; interprétez chaque segment.</li>
+<li>Résumez vos découvertes en un court texte.</li>
+</ol>
+<ul>
+<li><strong>Livrable :</strong> notebook EDA commenté + résumé des conclusions.</li>
+</ul>
+<h3>Phase 3 : Machine learning supervisé (semaines 3-4)</h3>
+<ol>
+<li>Définissez la cible (ex. <code>insatisfait = note ≤ 2</code>) et évitez toute fuite de données (n'utilisez que l'information disponible au moment de la prédiction).</li>
+<li>Créez des variables : délai estimé/réel, prix, poids, distance vendeur-client, catégorie.</li>
+<li>Établissez un modèle de base (régression logistique) puis XGBoost ou LightGBM.</li>
+<li>Validez par validation croisée ; comparez avec AUC, précision/rappel, F1 ; gérez le déséquilibre des classes.</li>
+<li>Optimisez avec Optuna et suivez chaque essai dans MLflow.</li>
+<li>Expliquez le modèle avec SHAP.</li>
+</ol>
+<ul>
+<li><strong>Livrable :</strong> modèle enregistré dans MLflow + tableau comparatif des modèles.</li>
+</ul>
+<h3>Phase 4 : Recommandation (semaine 4)</h3>
+<ol>
+<li>Commencez par une approche simple : produits ou catégories fréquemment achetés ensemble.</li>
+<li>Ajoutez une approche par embeddings (descriptions de produits, similarité cosinus).</li>
+<li>Si les données Olist sont trop clairsemées, faites cette étape sur Instacart, H&amp;M ou MovieLens et dites-le clairement dans le README.</li>
+<li>Mesurez avec Precision@K, Recall@K ou NDCG@K.</li>
+</ol>
+<ul>
+<li><strong>Livrable :</strong> module de recommandation évalué.</li>
+</ul>
+<h3>Phase 5 : NLP et RAG (semaines 5-6)</h3>
+<ol>
+<li>Nettoyez les avis clients (langue : portugais ; traduisez ou utilisez un modèle multilingue).</li>
+<li>Faites une analyse de sentiment ou une extraction des motifs d'insatisfaction.</li>
+<li>Découpez les textes, créez des embeddings et indexez-les dans une base vectorielle.</li>
+<li>Construisez la chaîne RAG : recherche, génération avec citation des sources.</li>
+<li>Évaluez : jeu de 30 à 50 questions avec réponses attendues, mesure de la fidélité aux sources (Ragas ou LLM-as-judge).</li>
+</ol>
+<ul>
+<li><strong>Livrable :</strong> assistant RAG + rapport d'évaluation.</li>
+</ul>
+<h3>Phase 6 : Agents IA (semaines 6-7)</h3>
+<ol>
+<li>Définissez vos outils, chacun avec un schéma d'entrée/sortie validé par Pydantic : <code>run_sql</code>, <code>predict_risk</code>, <code>recommend</code>, <code>search_reviews</code>, <code>draft_message</code>.</li>
+<li>Créez un premier agent unique qui utilise ces outils.</li>
+<li>Passez à l'architecture multi-agents : orchestrateur, analyste de données, agent documentaire, agent d'action (framework : LangGraph ou équivalent).</li>
+<li>Exposez vos outils via un serveur MCP.</li>
+<li>Ajoutez une validation humaine avant toute action à impact.</li>
+<li>Ajoutez des garde-fous : permissions minimales, requêtes SQL en lecture seule, limites de budget et d'étapes, protection contre l'injection de prompt.</li>
+<li>Évaluez sur 30 à 50 scénarios : taux de réussite, nombre d'étapes, coût, latence. Analysez les échecs.</li>
+</ol>
+<ul>
+<li><strong>Livrable :</strong> système d'agents + tableau d'évaluation + analyse des échecs.</li>
+</ul>
+<h3>Phase 7 : API, conteneurs et CI/CD (semaine 8)</h3>
+<ol>
+<li>Exposez modèles et agents avec FastAPI (documentation Swagger automatique).</li>
+<li>Écrivez des tests avec pytest.</li>
+<li>Créez les Dockerfiles et un <code>docker-compose.yml</code> (API, base de données, base vectorielle).</li>
+<li>Mettez en place GitHub Actions : lint, tests, build de l'image.</li>
+</ol>
+<ul>
+<li><strong>Livrable :</strong> application démarrable avec <code>docker compose up</code>.</li>
+</ul>
+<h3>Phase 8 : Déploiement et monitoring (semaines 9-10)</h3>
+<ol>
+<li>Déployez sur un cloud (AWS, GCP, Azure) ou sur Hugging Face Spaces / Render pour rester gratuit.</li>
+<li>Créez une interface Streamlit pour la démo.</li>
+<li>Ajoutez le suivi de dérive des données avec Evidently et le traçage des agents avec Langfuse.</li>
+</ol>
+<ul>
+<li><strong>Livrable :</strong> démo en ligne + tableau de bord de suivi.</li>
+</ul>
+<h3>Phase 9 : Finalisation et valorisation (semaine 10)</h3>
+<ol>
+<li>Rédigez un README professionnel : contexte, schéma d'architecture, résultats chiffrés, installation, limites, pistes d'amélioration.</li>
+<li>Enregistrez une vidéo de démonstration de 3 minutes.</li>
+<li>Publiez un article (LinkedIn, Medium) qui raconte vos choix techniques.</li>
+<li>Ajoutez le projet au CV et au profil LinkedIn.</li>
+</ol>
+<hr>
+<h2>6. Points de contrôle qualité</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Le projet se lance avec une seule commande.</li>
+<li><input disabled="" type="checkbox"> Aucune fuite de données dans les modèles.</li>
+<li><input disabled="" type="checkbox"> Chaque modèle est comparé à un modèle de base.</li>
+<li><input disabled="" type="checkbox"> Les résultats sont chiffrés et honnêtes, limites comprises.</li>
+<li><input disabled="" type="checkbox"> Les agents sont évalués sur des scénarios reproductibles.</li>
+<li><input disabled="" type="checkbox"> Aucune clé d'API dans le dépôt (utilisez un fichier <code>.env</code> ignoré par Git).</li>
+<li><input disabled="" type="checkbox"> La démo est accessible par un lien.</li>
+</ul>
+<h2>7. Formulation pour le CV</h2>
+<blockquote>
+<p>Conception et déploiement d'une plateforme e-commerce intelligente : pipeline de données (Airflow, PostgreSQL, DVC), modèles prédictifs (XGBoost, SHAP, MLflow), système de recommandation, assistant RAG et copilote multi-agents (LangGraph, MCP) avec validation humaine, évaluation automatisée, API FastAPI dockerisée, CI/CD et monitoring (Evidently, Langfuse).</p>
+</blockquote>
+<h2>8. Si le temps manque</h2>
+<p>Version réduite, tout aussi crédible : phases 1, 2, 3, 5, 7 et 9, puis ajoutez un agent unique avec deux outils. Mieux vaut un projet plus petit, complet et bien documenté qu'un projet immense inachevé.</p>
+
+</body></html>
