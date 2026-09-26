@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\echar\Documents\Projects\ecomerce-ai-platform\.venv
+set VIRTUAL_ENV=C:\Users\echar\Documents\Projects\ecommerce-ai-platform\.venv
 
 if not defined PROMPT set PROMPT=$P$G
 
